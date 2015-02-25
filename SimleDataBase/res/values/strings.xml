@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Simle Data Base</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Students Form Information Start -->
+
+    <string name="student_name">Student/s Name</string>
+    <string name="roll">Roll OR Id Of Student</string>
+    <string name="phone">Phone Number</string>
+    <string name="email">example@domain.com</string>
+    <string name="session">Session(Year)</string>
+    <string name="semester">Semester Number</string>
+    <string name="cgpa">CGPA</string>
+    <string name="blood_group">Blood Group</string>
+
+    <!-- Form Information end -->
+
+
+    <!-- Button String -->
+    <string name="btn_submit">Register</string>
+    <string name="btn_show">Show Data</string>
+
+</resources>

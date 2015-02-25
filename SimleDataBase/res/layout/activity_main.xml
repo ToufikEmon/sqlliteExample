@@ -1,0 +1,135 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity" >
+
+        <EditText
+            android:id="@+id/edtStudentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/student_name"
+            android:textColor="@color/hint_color" />
+
+        <requestFocus />
+
+        <EditText
+            android:id="@+id/edtSemester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtSession"
+            android:layout_below="@+id/edtSession"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/semester"
+            android:inputType="number"
+            android:textColor="@color/hint_color" />
+
+        <EditText
+            android:id="@+id/edtRoll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtStudentName"
+            android:layout_below="@+id/edtStudentName"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="@string/roll"
+            android:inputType="number"
+            android:textColor="@color/hint_color" />
+
+        <EditText
+            android:id="@+id/edtPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtRoll"
+            android:layout_below="@+id/edtRoll"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:textColor="@color/hint_color" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtPhoneNumber"
+            android:layout_below="@+id/edtPhoneNumber"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/hint_color" />
+
+        <EditText
+            android:id="@+id/edtSession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtEmail"
+            android:layout_below="@+id/edtEmail"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="@string/session"
+            android:inputType="date"
+            android:textColor="@color/hint_color" />
+
+        <EditText
+            android:id="@+id/edtCGPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtSemester"
+            android:layout_below="@+id/edtSemester"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="@string/cgpa"
+            android:inputType="numberDecimal"
+            android:textColor="@color/hint_color" />
+
+        <EditText
+            android:id="@+id/edtBloodGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edtCGPA"
+            android:layout_below="@+id/edtCGPA"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="@string/blood_group"
+            android:textColor="@color/hint_color" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/edtBloodGroup"
+            android:layout_alignRight="@+id/edtBloodGroup"
+            android:layout_below="@+id/edtBloodGroup"
+            android:layout_marginTop="14dp"
+            android:text="@string/btn_submit"
+            android:textColor="@color/btn_text_color" />
+
+        <Button
+            android:id="@+id/btn_CLear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/btn_submit"
+            android:layout_alignRight="@+id/btn_submit"
+            android:layout_below="@+id/btn_submit"
+            android:layout_marginTop="14dp"
+            android:text="@string/btn_show"
+            android:textColor="@color/btn_text_color" />
+    </RelativeLayout>
+
+</ScrollView>
